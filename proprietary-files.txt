@@ -82,7 +82,6 @@ vendor/lib64/sensors.grip.so
 vendor/lib64/sensors.sensorhub.so
 
 # Teegris
-vendor/bin/tzdaemon
 vendor/lib64/libteecl.so
 
 # Teegris Firmware
