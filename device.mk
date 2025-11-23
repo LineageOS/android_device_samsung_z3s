@@ -18,9 +18,9 @@
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/audio/mixer_paths.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_paths.xml
 
-$(call soong_config_set,universal9830AudioVars,use_bta2dp_offload,false)
-$(call soong_config_set,universal9830AudioVars,use_quad_mic,true)
-$(call soong_config_set,universal9830AudioVars,use_camcorder_quad_mic,false)
+$(call soong_config_set_bool,universal9830AudioVars,use_bta2dp_offload,false)
+$(call soong_config_set_bool,universal9830AudioVars,use_quad_mic,true)
+$(call soong_config_set_bool,universal9830AudioVars,use_camcorder_quad_mic,false)
 
 # Bluetooth
 $(call soong_config_set,brcm_libbt,custom_bt_config,//$(LOCAL_PATH):vnd_exynos9830.txt)
@@ -68,7 +68,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/wifi/p2p_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/p2p_supplicant_overlay.conf \
     $(LOCAL_PATH)/configs/wifi/wpa_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/wpa_supplicant_overlay.conf
 
-$(call soong_config_set,wpa_supplicant_8,board_wlan_bcmdhd_sae,true)
+$(call soong_config_set_bool,wpa_supplicant_8,board_wlan_bcmdhd_sae,true)
 
 # Inherit from common
 $(call inherit-product, device/samsung/universal9830-common/device-common.mk)
