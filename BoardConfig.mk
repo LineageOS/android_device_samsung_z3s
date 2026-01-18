@@ -23,12 +23,6 @@ BOARD_HAVE_BLUETOOTH := true
 BOARD_HAVE_BLUETOOTH_BCM := true
 BOARD_CUSTOM_BT_CONFIG := $(DEVICE_PATH)/bluetooth/libbt_vndcfg.txt
 
-# Camera
-SOONG_CONFIG_NAMESPACES += samsungCameraVars
-SOONG_CONFIG_samsungCameraVars += extra_ids
-# ID=52 is telephoto
-SOONG_CONFIG_samsungCameraVars_extra_ids := 52
-
 # Display
 TARGET_SCREEN_DENSITY := 560
 
