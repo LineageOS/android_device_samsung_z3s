@@ -34,6 +34,9 @@ PRODUCT_PACKAGES += \
 TARGET_SCREEN_HEIGHT := 3200
 TARGET_SCREEN_WIDTH := 1440
 
+# Camera
+$(call soong_config_set,samsungCameraVars,extra_ids,52) # ID=52 is telephoto
+
 # Density mapping config
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/display/display_id_4633128672291735937.xml:$(TARGET_COPY_OUT_VENDOR)/etc/displayconfig/display_id_4633128672291735937.xml
