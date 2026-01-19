@@ -44,7 +44,6 @@ PRODUCT_COPY_FILES += \
 # Overlays 
 PRODUCT_PACKAGES += \
     FrameworkResOverlayDevice \
-    SettingsOverlayDevice \
     SettingsProviderOverlayDevice \
     SystemUIOverlayDevice \
     WiFiOverlayDevice
