@@ -42,7 +42,12 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/display/display_id_4633128672291735937.xml:$(TARGET_COPY_OUT_VENDOR)/etc/displayconfig/display_id_4633128672291735937.xml
 
 # Overlays 
-DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
+PRODUCT_PACKAGES += \
+    FrameworkResOverlayDevice \
+    SettingsOverlayDevice \
+    SettingsProviderOverlayDevice \
+    SystemUIOverlayDevice \
+    WiFiOverlayDevice
 
 # Sensors
 PRODUCT_COPY_FILES += \
@@ -60,8 +65,7 @@ PRODUCT_PACKAGES += \
     wpa_supplicant \
     wpa_supplicant.conf \
     wifi_brcm.rc \
-    wifi_sec.rc \
-    WifiOverlay
+    wifi_sec.rc
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/wifi/p2p_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/p2p_supplicant_overlay.conf \
