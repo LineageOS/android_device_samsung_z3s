@@ -12,6 +12,9 @@ vendor/firmware/APTV_AUDIO_SLSI.bin
 vendor/firmware/AP_AUDIO_SLSI.bin
 vendor/firmware/SoundBoosterParam.bin
 
+# Audio (SoundBooster)
+vendor/etc/SoundBoosterParam.txt
+
 # Bluetooth
 vendor/firmware/bcm4375B1_murata.hcd
 vendor/firmware/bcm4375B1_semco.hcd
